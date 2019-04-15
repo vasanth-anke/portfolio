@@ -1,38 +1,159 @@
-$theme-color:#f7be0c;
-$grey-bg:#f1f1f1;
-$section-height:630px;
-$summary-height:530px;
-$grey-font:grey;
+@import 'src/styles/variables.scss';
+
+
 
 .skills{
     width: 100%;
-    height:$section-height;
+    //height:$section-height;
+   // height:700px;
     background-color: #fff;
 }
 
-.skills-title{
-    
-    width: 2%;
-    float: left;
-    color: #ccc;
-    font-size: 3rem;
-    word-wrap: break-word;
-    margin-top: 120px;
-    padding-left: 10px;
-    text-align: center;
-}
-
-
 .skill-icons{
-    width: 45%;
-    float:left;
+    //width: 45%;
+    //float:left;
+    height:350px;
     position: relative;
 }
+
+
+.icons-bg{
+    width: 70%;
+    height: 230px;
+    margin-top: 20%;
+    margin-left: 25%;
+   // margin-left: 31%;
+    background-color: #f7be0c;
+    position: absolute;
+    opacity: 0.8;
+    float:left;
+}
+
+
+.icon-wrap{
+    width: 70%;
+    height: 200px;
+    margin-top: 3%;
+    margin-left: 50px;
+    float: left;
+    position:absolute;
+}
+
+
+.icon-box{
+    width:60px;
+    height:60px;
+    float:left;
+    background-color: $grey-bg;
+    border: 2px solid #fff;
+}
+
+.icon{
+    width: 36px;
+    height: 36px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+.spring-boot-img{
+    width: 50px;
+    height: 34px;
+    margin-left: 5px;
+    margin-top: 12px;
+}
+.aws-img{
+    width: 75px;
+    height: 40px;
+    margin-left: -6px;
+}
+
+.git-img{
+    width: 46px;
+    height: 23px;
+    margin-left: 6px;
+    margin-top: 17px;
+}
+
+.maven-img{
+    width: 68px;
+    height:28px;
+}
+
+.oracle-img{
+    width: 57px;
+    height: 68px;
+    margin-left: 2px;
+    margin-top: -3px;
+}
+
+.orient-img{
+    width: 52px;
+    height: 43px;
+    margin-left: 4px;
+    margin-top: 9px;
+}
+
+.tomcat-img{
+    width: 58px;
+    height: 53px;
+    margin-top: 4px;
+    margin-left: 3px;
+}
+
+
+.skill-set{
+    margin-top: 40px;
+    font-size: 15px;
+    height:630px;
+}
+.skills-wrap{
+    width:100%;
+    //position: absolute;
+    float:left;
+    display:inline-flex;
+}
+.skill-n{
+    width:25%;
+    float:left;
+    padding: 10px 15px 10px 15px;
+    border-bottom: 1px solid #ccc;
+    font-size:15px;
+}
+
+.skill-v{
+    width:75%;
+    float:left;
+    padding: 10px 15px 10px 15px;
+    border-bottom: 1px solid #ccc;
+    font-size:15px;
+
+    b{
+        font-size:15px;
+    }
+}
+
+
+@media (max-width:1100px) and (min-width:550px) {
+
+    
+    .skill-icons{
+        height:450px;
+        position: relative;
+    }
+    .skill-set{
+        height:450px;
+    }
+
+}
+
+@media only screen and (min-width: 550px) {
+
 .icons-bg{
     width: 369px;
     height: 375px;
-    margin-top: 155px;
-    margin-left: 145px;
+    margin-top: 130px;
+    margin-left: 31%;
     background-color: #f7be0c;
     position: absolute;
     opacity: 0.8;
@@ -41,8 +162,8 @@ $grey-font:grey;
 .icon-wrap{
     width: 360px;
     height: 360px;
-    margin-top: 115px;
-    margin-left: 90px;
+    margin-top: 30px;
+    margin-left: 25%;
     float: left;
     position:absolute;
 }
@@ -60,61 +181,16 @@ $grey-font:grey;
     margin-top: 16px;
     margin-left: 16px;
 }
-.icon-big{
-    width: 80px;
-    height: 80px;
-}
-
-.icon-med{
-    width: 50px;
-    height: 50px;
-}
-
-.java{
-    margin-top:30px;
-    margin-left:50px;
-    position: absolute;
-}
-.spring-boot{
-    margin-top:250px;
-    margin-left:230px;
-    position: absolute;
-}
 .spring-boot-img{
     width: 70px;
     height: 45px;
     margin-left: 10px;
     margin-top: 20px;
 }
-
-.spring{
-    margin-top:70px;
-    margin-left:150px;
-    position: absolute;
-}
-
-.angular{
-    margin-top:70px;
-    margin-left:300px;
-    position: absolute;
-}
-
-.aws{
-    margin-top:230px;
-    margin-left:370px;
-    position: absolute;
-}
-
 .aws-img{
     width: 100px;
     height: 50px;
     margin-left: -6px;
-}
-
-.git{
-    margin-top:321px;
-    margin-left:230px;
-    position: absolute;
 }
 .git-img{
     width:60px;
@@ -122,27 +198,9 @@ $grey-font:grey;
     margin-top:26px;
 }
 
-.hibernate{
-    margin-top:311px;
-    margin-left:318px;
-    position: absolute;
-}
-
-.maven{
-    margin-top:445px;
-    margin-left:365px;
-    position: absolute;
-}
-
 .maven-img{
     width: 68px;
     height:28px;
-}
-
-.oracle{
-    margin-top:460px;
-    margin-left:136px;
-    position: absolute;
 }
 
 .oracle-img{
@@ -151,22 +209,12 @@ $grey-font:grey;
     margin-top:10px;
 }
 
-.orient{
-    margin-top:563px;
-    margin-left:300px;
-    position: absolute;
-}
 .orient-img{
     width:70px;
     height:55px;
     margin-left: 10px;
 }
 
-.tomcat{
-    margin-top:295px;
-    margin-left:123px;
-    position: absolute;
-}
 .tomcat-img{
     width: 72px;
     height: 70px;
@@ -174,38 +222,34 @@ $grey-font:grey;
     margin-left: 9px;
 }
 
-.vue{
-    margin-top:505px;
-    margin-left:70px;
-    position: absolute;
+
+}
+
+@media only screen and (min-width: 1100px) {
+
+    .skills{
+        height:650px;
+    }
+.skill-icons{
+    width: 45%;
+    float:left;
+    position: relative;
 }
 
 .skill-set{
     width:50%;
     float:right;
-   // position: relative;
     margin-top: 80px;
-    //display:inline-flex;
-}
-.skills-wrap{
-    width:100%;
-    //position: absolute;
-    float:left;
-    display:inline-flex;
-}
-.skill-n{
-    width:25%;
-    float:left;
-    padding: 10px 15px 10px 15px;
-    border-bottom: 1px solid #ccc;
-    color: $grey-font;
+    
 }
 
-.skill-v{
-    width:75%;
-    float:left;
-    padding: 10px 15px 10px 15px;
-    border-bottom: 1px solid #ccc;
-    color: $grey-font;
-    font-size: 0.9rem;
+.icons-bg{
+    margin-top: 150px;
+    margin-left: 31%;
+}
+.icon-wrap{
+    margin-top: 110px;
+    margin-left: 18%;
+}
+
 }

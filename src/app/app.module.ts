@@ -8,6 +8,9 @@ import { ParallaxDirective } from './directive/parallax.directive';
 import { SkillsComponent } from './component/skills/skills.component';
 import { HeaderComponent } from './component/header/header.component';
 import { ExperienceComponent } from './component/experience/experience.component';
+import { ProjectsComponent } from './component/projects/projects.component';
+import { ContactComponent } from './component/contact/contact.component';
+import { MobileHeaderComponent } from './component/mobile-header/mobile-header.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { ExperienceComponent } from './component/experience/experience.component
     ParallaxDirective,
     SkillsComponent,
     HeaderComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ProjectsComponent,
+    ContactComponent,
+    MobileHeaderComponent
   ],
   imports: [
     BrowserModule,

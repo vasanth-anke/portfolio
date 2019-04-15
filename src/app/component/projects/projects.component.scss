@@ -1,0 +1,71 @@
+$theme-color:#f7be0c;
+$grey-bg:#f1f1f1;
+$section-height:650px;
+$grey-font:grey;
+$white: #fff;
+
+.projects{
+    width: 100%;
+    height: $section-height;
+    background-color: $white;
+    position: relative;
+}
+
+.proj-title{
+    width: 2%;
+    float: left;
+    color: #ccc;
+    font-size: 3rem;
+    word-wrap: break-word;
+    margin-top: 100px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.proj-wrap{
+    margin-left: 120px;
+    position: absolute;
+    width:70%;
+}
+.juniper{
+    margin-top: 50px;
+}
+.qbe{
+    margin-top: 235px;
+}
+
+.logo{
+    border-radius: 20px;
+    width: 250px;
+    height: 140px;
+    background-color: $grey-bg;
+    float:left;
+}
+.juniper-logo{
+    width: 227px;
+    height: 147px;
+    margin-left: 12px;
+    margin-top: -4px;
+}
+.qbe-logo{
+    width: 90px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 77px;
+}
+.desc{
+    float:left;
+    padding-left:40px;
+}
+
+.ubs{
+    margin-top: 420px;
+}
+
+.ubs-logo{
+    width: 220px;
+    height: 160px;
+    margin-top: -9px;
+    margin-left: 19px;
+}
+

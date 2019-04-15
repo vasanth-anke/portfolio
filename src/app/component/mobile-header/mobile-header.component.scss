@@ -1,0 +1,45 @@
+@import 'src/styles/variables.scss';
+
+.mobile-header{
+    background-color:$theme-color;
+    height:50px;
+    position:fixed;
+    width: 100%;
+    z-index:2;
+}
+.menu{
+    float: right;
+    padding-right: 5%;
+    padding-top: 2%;
+}
+
+.menu-icon{
+    width:70%;
+    height:70%;
+}
+.menu-list{
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    opacity: 0.8;
+    top: 50px;
+    height: 207px;
+    text-align: center;
+
+    
+
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        padding: 13px;
+        color: #f1f1ff;
+    }
+    a{
+        text-decoration: none;
+        color: #f1f1ff;
+    }
+}

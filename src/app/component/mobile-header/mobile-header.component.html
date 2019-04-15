@@ -1,0 +1,15 @@
+<div class="mobile-header">
+    <div class="menu">
+      <img class="menu-icon" *ngIf="isMenuVisible==false" src="assets/icon/menu.png" (click)="showMenu()">
+      <img class="menu-icon" *ngIf="isMenuVisible==true" src="assets/icon/close.png"  (click)="hideMenu()" >
+    </div>
+</div>
+
+<div *ngIf="isMenuVisible==true" class="menu-list">
+    <ul>
+        <li><a href="#skills">SKILLS</a></li>
+        <li> <a href="#experience">EXPERIENCE</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+</div>
