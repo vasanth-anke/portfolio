@@ -1,49 +1,55 @@
-$theme-color:#f7be0c;
-$grey-bg:#f1f1f1;
-$section-height:650px;
-$grey-font:grey;
-$white: #fff;
+@import 'src/styles/variables.scss';
+
+
 
 .contact{
     width:100%;
-    height:$section-height;
-    background-color: $grey-bg;
-    font-size: 1.9rem;
-}
-
-.divider{
-    border-left: 2px solid #f7be0c;
-    height: 350px;
-    margin-left: 50%;
-    margin-top: 160px;
-    position: absolute;
-}
-
-.left-content{
-    padding-top: 200px ;
-    padding-left: 290px;
-    padding-right:10px;
-    text-align: right;
-}
-
-.right-content{
-    padding-top: 200px ;  
-    padding-left:30px;  
-}
-
-.half{
-    width:50%;
+    height:200px;
+    background-color: black;
+    opacity: 0.8;   
+    position: relative;
     float: left;
 }
-.welcome{
-    margin-left: 35.3%;
-    margin-top:100px;
+
+.card{
     position: absolute;
-    text-align: center;
+    margin-top: 70px;
+    
+    color:#fff;
+    margin-left:-15px;
+    display: inline-flex;
+    flex:0 0 auto;
+
+    ul{
+        list-style: none;
+    margin-left: auto;
+    }
+    li{
+        padding: 10px 12px 10px 5px;
+        display: inline;
+        color:#fff;
+    }
+    a{
+        text-decoration: none;
+        color:#fff;
+    }
 }
 
 .contact-icon{
-    width:60px;
-    height:60px;
-    margin-top:10px;
+    width:15px;
+    height:15px;
+    margin-bottom: -1px;
+ }
+
+
+
+@media only screen and (min-width: 1100px) {
+
+    .card{
+        margin-left:100px;
+
+        li{
+            padding: 5px 25px 5px 25px;
+        }
+    }
 }

@@ -59,6 +59,15 @@
     border-radius: 25px;
     position: absolute;
     //margin-top:50% !important;
+    ul{
+        padding: 0px 0px 0px 30px;
+    }
+    li{
+        font-size: 14px;
+        padding: 5px 0px 5px 5px;
+        display:inline;
+    }
+
 }
 
 .box1{
@@ -117,6 +126,15 @@
          margin-left: 13.2%;
      }
 
+     .box{
+        ul{
+            padding: 5px 0px 0px 25px;
+        }
+        li{
+            font-size: 15px;
+            padding: 10px 10px 5px 5px;
+        }
+     }
 
     .box1{
         margin-top:337px;

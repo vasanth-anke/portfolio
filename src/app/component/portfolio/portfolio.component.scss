@@ -5,16 +5,15 @@
     .summary{
         margin:auto;
         max-width:1300px;
-        background-color: $grey-bg;
-        //height:720px;     
+          //height:720px; 
+          background-color: $grey-bg;     
     }
 
     .summary-desc{
         position:relative;
         height:430px;
     }
-    .summary-pic{
-        background-color: $grey-bg;  
+    .summary-pic{  
         position:relative;
         height: 350px;  
         top:90px;

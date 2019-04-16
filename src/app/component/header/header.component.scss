@@ -6,18 +6,25 @@
 }
 
 .header{
-    background-color:$theme-color;
-    height:70px;
+    background-color:$grey-bg;
+    //height:90px;
+    width:100%;
+ }
+.menu{
     width:100%;
     display: inline-flex;
     align-items: center;
     flex: 0 0 auto;
+    border-bottom:1px solid $theme-color;
+   
+    
 
     //position:relative;
     ul{
         list-style: none;
         margin-left:auto; 
-        margin-right:0;
+        margin-right:31%;
+        font-size: 15px !important;
     }
     li{
         padding:5px 25px 5px 25px;
@@ -26,7 +33,12 @@
     }
     a{
         text-decoration: none;
-        color:$grey-font
+        color:$grey-font;
+        font-size:15px;
     }
+}
+
+.sign{
+    margin-left:42%;
 }
 
