@@ -9,12 +9,14 @@ import { AppLoadService } from './service/app-load.service';
 export class AppComponent {
   title = 'vasanth-anke';
 
+  isMobileResolution: boolean = false;
+
   constructor(private appLoadService: AppLoadService  ){
-    this.appLoadService.checkMobileResolution();
+    this.isMobileResolution = this.appLoadService.isMobileWidth();
   }
 
   @HostListener('window:resize', ['$event'])
   onWindowResize(event: any) {
-    this.appLoadService.checkMobileResolution();
+    this.isMobileResolution =  this.appLoadService.isMobileWidth();
   }
 }

@@ -6,15 +6,13 @@ import { WindowService } from './window.service';
 })
 export class AppLoadService {
 
-  isMobileResolution: boolean = false;
-
   constructor(private windowService: WindowService) { }
 
-  checkMobileResolution(){
+  isMobileWidth(){
     if (this.windowService.nativeWindow.innerWidth < 700) {
-      this.isMobileResolution = true;
+      return true;
     } else {
-      this.isMobileResolution = false;
+      return false;
     }
   }
 
